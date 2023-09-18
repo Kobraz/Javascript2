@@ -18,7 +18,7 @@ signupBtn.onclick = function () {
   signupBtn.classList.remove("disabled");
 };
 
-//---testing---
+//---LoginCheck - Check if email and password from Login-form matches array---
 
 const loginForm = document.getElementById("loginForm");
 const users = [
