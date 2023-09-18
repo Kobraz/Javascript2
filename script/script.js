@@ -37,8 +37,10 @@ loginForm.addEventListener("submit", (event) => {
   if (user) {
     alert("Login successful!");
     message.innerHTML = "Login successful!";
+    console.log("Login successfull");
   } else {
     alert("Invalid username or password.");
     message.innerHTML = "Invalid username or password.";
+    console.log("Invalid username or password");
   }
 });
