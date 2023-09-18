@@ -99,6 +99,11 @@ form p a {
   transition: background 1s;
 }
 
+.btn-field #submitBtn {
+  border: 1px solid #461919;
+  background: black;
+}
+
 .input-group {
   height: 280px;
 }
