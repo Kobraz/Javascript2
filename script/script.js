@@ -8,15 +8,23 @@ let lost = document.getElementById("lost");
 signinBtn.onclick = function () {
   nameField.style.maxHeight = "0";
   title.innerHTML = "Sign In";
+  signupBtn.classList.remove("enabled");
   signupBtn.classList.add("disabled");
   signinBtn.classList.remove("disabled");
+  signinBtn.classList.add("enabled");
+  console.log("signupBtn " + document.getElementById("signupBtn").className);
+  console.log("signinBtn " + document.getElementById("signinBtn").className);
 };
 
 signupBtn.onclick = function () {
   nameField.style.maxHeight = "60px";
   title.innerHTML = "Sign Up";
+  signinBtn.classList.remove("enabled");
   signinBtn.classList.add("disabled");
   signupBtn.classList.remove("disabled");
+  signupBtn.classList.add("enabled");
+  console.log("signupBtn " + document.getElementById("signupBtn").className);
+  console.log("signinBtn " + document.getElementById("signinBtn").className);
 };
 
 //---LoginCheck - Check if email and password from Login-form matches array---
