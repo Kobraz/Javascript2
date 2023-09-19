@@ -112,3 +112,12 @@ form p a {
   background: #eaeaea;
   color: #555;
 }
+
+#message {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
