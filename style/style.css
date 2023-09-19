@@ -97,6 +97,11 @@ form p a {
   outline: 0;
   cursor: pointer;
   transition: background 1s;
+  font-weight: bold;
+}
+
+.btn-field button {
+  font-weight: bold;
 }
 
 .btn-field #submitBtn {
