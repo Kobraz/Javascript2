@@ -10,6 +10,7 @@ signinBtn.onclick = function () {
   nameField.style.maxHeight = "0";
   title.innerHTML = "Sign In";
   mode = "signIn";
+  console.log("SignIn-mode");
   signupBtn.classList.remove("enabled");
   signupBtn.classList.add("disabled");
   signinBtn.classList.remove("disabled");
@@ -22,6 +23,7 @@ signupBtn.onclick = function () {
   nameField.style.maxHeight = "60px";
   title.innerHTML = "Sign Up";
   mode = "signUp";
+  console.log("SignUp-mode");
   signinBtn.classList.remove("enabled");
   signinBtn.classList.add("disabled");
   signupBtn.classList.remove("disabled");
@@ -66,5 +68,5 @@ if (mode === "signIn") {
     }
   });
 } else if (mode === "signUp") {
-  console.log("SignUp-mode");
+  console.log("SignUp-mode running");
 }
