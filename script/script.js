@@ -3,6 +3,7 @@ let signinBtn = document.getElementById("signinBtn");
 let nameField = document.getElementById("nameField");
 let title = document.getElementById("title");
 let message = document.getElementById("message");
+let lost = document.getElementById("lost");
 
 signinBtn.onclick = function () {
   nameField.style.maxHeight = "0";
