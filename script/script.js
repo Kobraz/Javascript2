@@ -35,11 +35,9 @@ loginForm.addEventListener("submit", (event) => {
     (user) => user.email === email && user.password === password
   );
   if (user) {
-    alert("Login successful!");
     message.innerHTML = "Login successful!";
     console.log("Login successfull");
   } else {
-    alert("Invalid username or password.");
     message.innerHTML = "Invalid username or password.";
     console.log("Invalid username or password");
   }
