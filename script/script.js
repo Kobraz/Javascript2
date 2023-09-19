@@ -37,8 +37,18 @@ loginForm.addEventListener("submit", (event) => {
   if (user) {
     message.innerHTML = "Login successful!";
     console.log("Login successfull!");
+    message.style.color = "green";
+    message.style.backgroundColor = "black";
+    lost.style.color = "#ddd";
+    document.getElementById("lost").getElementsByTagName("a")[0].style.color =
+      "#ddd";
   } else {
     message.innerHTML = "Invalid username or password.";
     console.log("Invalid username or password.");
+    message.style.color = "red";
+    message.style.backgroundColor = "black";
+    lost.style.color = "#000";
+    document.getElementById("lost").getElementsByTagName("a")[0].style.color =
+      "#000";
   }
 });
