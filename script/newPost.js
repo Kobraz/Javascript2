@@ -8,10 +8,15 @@
 // div.innerHTML = text;
 // document.body.appendChild(div);
 
+
+
 const fs = require("fs");
 
+let submitPost = document.getElementById("submitPost");
 let data = "Learning how to write in a file.";
 
-fs.writeFile("myFile.txt", data, (err) => {
-  if (err) throw err;
-});
+submitPost.onclick = write() {
+    fs.writeFile("myFile.txt", data, (err) => {
+      if (err) throw err;
+    });
+};
