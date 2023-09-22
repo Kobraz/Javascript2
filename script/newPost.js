@@ -8,10 +8,10 @@
 // div.innerHTML = text;
 // document.body.appendChild(div);
 
-var file = new File("myFile.txt");
-var reader = new FileReader();
-reader.onload = function () {
-  var text = reader.result;
-  console.log(text);
-};
-reader.readAsText(file);
+const fs = require("fs");
+
+let data = "Learning how to write in a file.";
+
+fs.writeFile("myFile.txt", data, (err) => {
+  if (err) throw err;
+});
