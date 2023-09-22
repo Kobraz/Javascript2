@@ -1,24 +1,22 @@
-// var text = document.getElementById("textField").value;
+// const fs = require("fs");
 
-// var file = new File("myFile.txt", "w");
+// let submitPost = document.getElementById("submitPost");
+// let data = "Learning how to write in a file.";
 
-// file.write(text);
+// fs.writeFile("myFile.txt", data, (err) => {
+//   if (err) throw err;
+// });
 
-// var div = document.createElement("div");
-// div.innerHTML = text;
-// document.body.appendChild(div);
+// fs.readFile("myFile.txt", (err, data) => {
+//   if (err) throw err;
+
+//   console.log(data.toString());
+// });
 
 const fs = require("fs");
-
-let submitPost = document.getElementById("submitPost");
-let data = "Learning how to write in a file.";
-
-fs.writeFile("myFile.txt", data, (err) => {
-  if (err) throw err;
-});
-
 fs.readFile("myFile.txt", (err, data) => {
-  if (err) throw err;
-
+  if (err) {
+    throw err;
+  }
   console.log(data.toString());
 });
