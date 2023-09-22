@@ -13,7 +13,6 @@
 //   console.log(data.toString());
 // });
 
-let require("fs");
 const fs = require("fs");
 
 fs.readFile("myFile.txt", (err, data) => {
