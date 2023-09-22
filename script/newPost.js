@@ -13,7 +13,8 @@
 //   console.log(data.toString());
 // });
 
-const fs = require("fs");
+// const fs = require("fs");
+import fs from "fs";
 fs.readFile("myFile.txt", (err, data) => {
   if (err) {
     throw err;
