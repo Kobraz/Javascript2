@@ -1,3 +1,5 @@
+import fs from "fs";
+
 // const fs = require("fs");
 
 // let submitPost = document.getElementById("submitPost");
@@ -14,7 +16,7 @@
 // });
 
 // const fs = require("fs");
-import fs from "fs";
+
 fs.readFile("myFile.txt", (err, data) => {
   if (err) {
     throw err;
