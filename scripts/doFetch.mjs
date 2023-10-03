@@ -1,30 +1,11 @@
-// export const doFetch = async (url, options = {}) => {
-//   console.log("Do fetch now");
+export async function doFetch(url = "", options = {}) {
+  const defaultOptions = {
+    headers: {
+      "Content-Type": "application/json",
+    },
+    ...options,
+  };
 
-//   try {
-//     const response = await fetch(url, options);
-//     const json = await response.json();
-//     return json;
-//   } catch {
-//     console.log(error);
-//   }
-// };
-
-export const doFetch = async (url, options = {}) => {
-  try {
-    const combinedOptions = {
-      header: {
-        "Content-Type": "application/json",
-      },
-      ...options,
-    };
-
-    console.log(combinedOptions);
-
-    const response = await fetch(url, options);
-    const json = await response.json();
-    return json;
-  } catch {
-    console.log(error);
-  }
-};
+  const response = await fetch(url, defaultOptions);
+  return response.json();
+}

@@ -1,0 +1,13 @@
+.form-input {
+  padding: 10px 30px 10px 15px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.page-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}

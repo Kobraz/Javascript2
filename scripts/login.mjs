@@ -4,6 +4,7 @@
 // 4. Submit the data / Call the submit function
 
 import { doFetch } from "./doFetch.mjs";
+import { postData } from "./doFetch-Example.mjs";
 
 const API_BASE_URL = "https://api.noroff.dev/api/v1";
 const API_REGISTER_URL = `${API_BASE_URL}/social/auth/register`;
@@ -11,11 +12,15 @@ const API_REGISTER_URL = `${API_BASE_URL}/social/auth/register`;
 const form = document.getElementById("user-login-form");
 
 async function handleUserLogin(userDetails) {
-  const result = await doFetch(API_REGISTER_URL, {
+  //const result = await postData(API_REGISTER_URL, {});
+
+  const options = {
     method: "POST",
-    body: userDetails,
-  });
-  console.log({ result });
+    body: JSON.stringify(userDetails),
+  };
+
+  const result = await postData(API_REGISTER_URL, options);
+  console.log(result);
 }
 
 function onLoginFormSubmit(event) {
